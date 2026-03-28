@@ -22,7 +22,7 @@ import TransactionHistory from './components/TransactionHistory';
 import ConnectCosmos from './components/cosmos/ConnectCosmos';
 import CosmosStatus from './components/cosmos/CosmosStatus';
 import CosmosBalance from './components/cosmos/CosmosBalance';
-import SendTokensComingSoon from './components/cosmos/SendTokensComingSoon';
+import SendTokens from './components/cosmos/SendTokens';
 
 function App() {
   const {
@@ -194,7 +194,7 @@ function App() {
                 onAddressChange={setCosmosAddress}
                 onCheckBalance={checkCosmosBalance}
               />
-              <SendTokensComingSoon />
+              <SendTokens />
             </div>
           </div>
         )}

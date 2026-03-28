@@ -7,7 +7,7 @@ export const connectToCosmos = async (req, res) => {
     try {
         const { mnemonic } = req.body;
         const result = await cosmosClient.connectToTestnet(mnemonic);
-        
+
         if (result.success) {
             res.json({
                 success: true,
@@ -19,9 +19,9 @@ export const connectToCosmos = async (req, res) => {
             res.status(400).json(result);
         }
     } catch (error) {
-        res.status(500).json({ 
-            success: false, 
-            error: error.message 
+        res.status(500).json({
+            success: false,
+            error: error.message
         });
     }
 };
@@ -29,7 +29,7 @@ export const connectToCosmos = async (req, res) => {
 export const getCosmosBalance = async (req, res) => {
     try {
         const { address } = req.query;
-        
+
         // Validate address if provided
         if (address) {
             const addressError = validateAddress(address);
@@ -37,13 +37,13 @@ export const getCosmosBalance = async (req, res) => {
                 return res.status(400).json({ success: false, error: addressError });
             }
         }
-        
+
         const result = await cosmosClient.getBalance(address);
         res.json(result);
     } catch (error) {
-        res.status(500).json({ 
-            success: false, 
-            error: error.message 
+        res.status(500).json({
+            success: false,
+            error: error.message
         });
     }
 };
@@ -59,7 +59,7 @@ export const sendCosmosTokens = async (req, res) => {
                 error: 'recipientAddress is required'
             });
         }
-        
+
         if (!amount) {
             return res.status(400).json({
                 success: false,
@@ -78,12 +78,12 @@ export const sendCosmosTokens = async (req, res) => {
             denom || 'uatom',
             memo || ''
         );
-        
+
         res.json(result);
     } catch (error) {
-        res.status(500).json({ 
-            success: false, 
-            error: error.message 
+        res.status(500).json({
+            success: false,
+            error: error.message
         });
     }
 };
@@ -93,9 +93,9 @@ export const getCosmosStatus = async (req, res) => {
         const result = await cosmosClient.getNetworkStatus();
         res.json(result);
     } catch (error) {
-        res.status(500).json({ 
-            success: false, 
-            error: error.message 
+        res.status(500).json({
+            success: false,
+            error: error.message
         });
     }
 };
@@ -103,14 +103,14 @@ export const getCosmosStatus = async (req, res) => {
 export const disconnectFromCosmos = (req, res) => {
     try {
         cosmosClient.disconnect();
-        res.json({ 
-            success: true, 
-            message: 'Disconnected from Cosmos network' 
+        res.json({
+            success: true,
+            message: 'Disconnected from Cosmos network'
         });
     } catch (error) {
-        res.status(500).json({ 
-            success: false, 
-            error: error.message 
+        res.status(500).json({
+            success: false,
+            error: error.message
         });
     }
 };

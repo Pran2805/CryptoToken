@@ -23,7 +23,7 @@ const Header: React.FC<HeaderProps> = ({ chainInfo }) => {
                             <span className="text-5xl animate-bounce">💰</span>
                             DSurv Token
                         </h1>
-                        <p className="text-gray-600 mt-1 flex items-center gap-2 justify-center md:justify-start">
+                        <p className="text-gray-600 mt-1 flex items-end gap-2 justify-end md:justify-end">
                             <FiZap className="text-yellow-500" />
                             Blockchain & Cosmos Integration
                             <FiAward className="text-purple-500" />
