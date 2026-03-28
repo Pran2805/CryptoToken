@@ -1,0 +1,62 @@
+{
+  "users": [
+    [
+      "Pranav",
+      {
+        "username": "Pranav",
+        "address": "cosmos1a6a56cd1190b2b8b257526912b736038431140",
+        "publicKey": "87c236111f894c3f15fcd75f21417719031ad8ce073df1f2d84d0779c803f1d6",
+        "privateKey": "138560411303eb52",
+        "createdAt": 1773922351675
+      }
+    ],
+    [
+      "Dev",
+      {
+        "username": "Dev",
+        "address": "cosmos11c7d81e1e2d8d522bf098dfcc600e10abef269",
+        "publicKey": "a56e2e516ca289fb8ab568aeea3aa135df6398a6f33e9e5243746c2900783622",
+        "privateKey": "b399dc23d68a9493",
+        "createdAt": 1773922385980
+      }
+    ],
+    [
+      "DEV2",
+      {
+        "username": "DEV2",
+        "address": "cosmos19f31d13ed2ce6cc1d8fe28eeaf2aed6a597386",
+        "publicKey": "cc80382dfc0b288c664c4fab7b628e6ef8faf5cfae0749a702460f8e42c7384b",
+        "privateKey": "7481fed1246628c6",
+        "createdAt": 1773922877002
+      }
+    ],
+    [
+      "Demo",
+      {
+        "username": "Demo",
+        "address": "cosmos1a64433b4ab75634e1e8aecbb31f252a4183753",
+        "publicKey": "030572a2e76b1ba79321263c18b0bacfeffd404ae910b3dc0a7fba9f760c77ca",
+        "privateKey": "548c7c4c58cf4605",
+        "createdAt": 1774591348523
+      }
+    ]
+  ],
+  "balances": [
+    [
+      "cosmos1a6a56cd1190b2b8b257526912b736038431140",
+      1109
+    ],
+    [
+      "cosmos11c7d81e1e2d8d522bf098dfcc600e10abef269",
+      1591
+    ],
+    [
+      "cosmos19f31d13ed2ce6cc1d8fe28eeaf2aed6a597386",
+      1000
+    ],
+    [
+      "cosmos1a64433b4ab75634e1e8aecbb31f252a4183753",
+      1000
+    ]
+  ]
+}
