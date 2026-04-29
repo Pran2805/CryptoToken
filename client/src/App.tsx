@@ -100,12 +100,12 @@ function App() {
 
       <main className="container mx-auto px-4 py-8 relative z-10">
         <div className="flex gap-4 mb-8 perspective-1000">
-          <TabButton
+          {/* <TabButton
             active={activeTab === 'local'}
             onClick={() => setActiveTab('local')}
             icon={<FiCpu className="text-xl" />}
             label="Local Blockchain"
-          />
+          /> */}
           <TabButton
             active={activeTab === 'cosmos'}
             onClick={() => setActiveTab('cosmos')}
